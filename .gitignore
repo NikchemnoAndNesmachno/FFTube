@@ -1,7 +1,5 @@
 bin/
 obj/
-FFmp43.sln
-FFmp43.CLI/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/

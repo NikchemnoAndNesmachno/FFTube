@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmp43", "FFmp43\FFmp43.csproj", "{E6EE200F-BDE6-4402-8F1F-CA1485D6E6EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmp43.CLI", "FFmp43.CLI\FFmp43.CLI.csproj", "{5E9312C9-6A87-4A05-936D-1741567328AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6EE200F-BDE6-4402-8F1F-CA1485D6E6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6EE200F-BDE6-4402-8F1F-CA1485D6E6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6EE200F-BDE6-4402-8F1F-CA1485D6E6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6EE200F-BDE6-4402-8F1F-CA1485D6E6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9312C9-6A87-4A05-936D-1741567328AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9312C9-6A87-4A05-936D-1741567328AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9312C9-6A87-4A05-936D-1741567328AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9312C9-6A87-4A05-936D-1741567328AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
