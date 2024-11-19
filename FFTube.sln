@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmp43", "FFmp43\FFmp43.csproj", "{E6EE200F-BDE6-4402-8F1F-CA1485D6E6EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFTube", "FFTube\FFTube.csproj", "{E6EE200F-BDE6-4402-8F1F-CA1485D6E6EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmp43.CLI", "FFmp43.CLI\FFmp43.CLI.csproj", "{5E9312C9-6A87-4A05-936D-1741567328AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFTube.CLI", "FFTube.CLI\FFTube.CLI.csproj", "{5E9312C9-6A87-4A05-936D-1741567328AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

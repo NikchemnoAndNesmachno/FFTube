@@ -1,30 +1,21 @@
 ﻿using System.Diagnostics;
 
 
-namespace FFmp43;
+namespace FFTube;
 
 public static class FFmpegRunner
 {
-    private static string _ffmpegPath = "";
+    public static string FFmpegPath { get; set; } = "";
 
-    public static string FFmpegPath
+    public static bool Exists() => File.Exists(FFmpegPath);
+
+    public static void Run(FFmpegMuxRecord record, FFmpegEventHandler handler)
     {
-        get => string.IsNullOrEmpty(_ffmpegPath) ? 
-               Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), DefaultFolderName), DefaultFFmpegName) :
-               _ffmpegPath;
-        set => _ffmpegPath = value;
-    }
-        
-    private static string DefaultFolderName => "ffmpeg";
-    private static string DefaultFFmpegName => "ffmpeg.exe";
-        
-    
-    public static void Run(FFmpegBaseRecord record, FFmpegEventHandler handler)
-    {
-        record.RefreshFile();
+        if (!Exists())
+            throw new MissingMemberException("No ffmpeg found");
         var  process = new Process();
         process.StartInfo.FileName = FFmpegPath;
-        process.StartInfo.Arguments = record.GetArguments();
+        process.StartInfo.Arguments = record.Build();
         process.StartInfo.UseShellExecute = false;
         process.StartInfo.CreateNoWindow = true;
         process.StartInfo.RedirectStandardOutput = true;
@@ -41,5 +32,6 @@ public static class FFmpegRunner
         process.OutputDataReceived -= handler.OnOutput;
         process.ErrorDataReceived -= handler.OnError;
         process.Close();
+        record.Clean();
     }
 }

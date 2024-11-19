@@ -5,10 +5,11 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>FFmp43.CLI</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FFmp43\FFmp43.csproj" />
+      <ProjectReference Include="..\FFTube\FFTube.csproj" />
     </ItemGroup>
 
 </Project>
