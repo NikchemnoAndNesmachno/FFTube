@@ -1,5 +1,5 @@
 
-# License / Ліцензія
+# NIN License / Ліцензія НІН
 
 ## Preface / Преамбула
 This license is provided in both English and Ukrainian for convenience. In case of any discrepancies or differences in interpretation, the Ukrainian version shall take precedence.
